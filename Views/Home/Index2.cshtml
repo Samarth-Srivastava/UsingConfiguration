@@ -2,8 +2,7 @@
 @inject IConfiguration Configuration
 <script type="text/javascript">
     $(document).ready(function() {
-        debugger;
-    var appsettingvalue = '@Configuration.GetSection("MyKeyName").Value';
+        var appsettingvalue = '@Configuration.GetSection("MyKeyName").Value';
         $("#spanid").html(appsettingvalue);
     })
 
